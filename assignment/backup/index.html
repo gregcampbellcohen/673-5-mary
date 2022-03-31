@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset=utf-8 />
+  <title>Lab 05 Starter</title>
+  <meta name='viewport' content='initial-scale=1,maximum-scale=1,user-scalable=no' />
+
+  <link href="https://api.mapbox.com/mapbox-assembly/v0.24.0/assembly.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://unpkg.com/leaflet@1.6.0/dist/leaflet.css" />
+  <link href='css/styles.css' rel='stylesheet' />
+</head>
+
+<body>
+  <div class='flex-parent viewport-full relative scroll-hidden'>
+    <div class='flex-child w-full w300-ml absolute static-ml left bottom'>
+      <div class='flex-parent flex-parent--column viewport-third h-full-ml hmax-full bg-white py18 px12'>
+        <div class='flex-child flex-child--grow px12 py12 scroll-auto'>
+          <h1 class='txt-h1 mb6'>Title here</h1>
+          <p>Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Sed posuere
+            consectetur est
+            at lobortis. Aenean eu leo quam. Pellentesque ornare sem lacinia quam venenatis vestibulum. Aenean lacinia
+            bibendum
+            nulla sed consectetur. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cum sociis natoque penatibus
+            et magnis dis parturient montes, nascetur ridiculus mus.</p>
+          <h2 class='txt-xl mt18 mb12'>subheading</h2>
+          <p>Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Sed posuere
+            consectetur est
+            at lobortis. Aenean eu leo quam. Pellentesque ornare sem lacinia quam venenatis vestibulum. Aenean lacinia
+            bibendum
+            nulla sed consectetur. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cum sociis natoque penatibus
+            et magnis dis parturient montes, nascetur ridiculus mus.</p>
+        </div>
+        <footer class='px12 py12 bg-gray-faint txt-s'>
+          <ul>
+            <li>Explore the raw
+              <a class='link' href='#'>data</a>
+            </li>
+            <li>Map authored by
+              <a class='link' href='#'>Ptolemy</a>
+            </li>
+          </ul>
+        </footer>
+      </div>
+    </div>
+    <div class='flex-child flex-child--grow viewport-twothirds viewport-full-ml'>
+      <div id="map" class='viewport-twothirds viewport-full-ml'></div>
+    </div>
+  </div>
+
+  <!-- ui slider -->
+  <div id='slider' class='range w240 bg-white round-ml px12'>
+    <input type='range' />
+  </div>
+
+  <!-- legend -->
+  <div id='legend' class='bg-white round-ml px18 py12'>
+    <h3 class='txt-bold mb12 w-full mx-auto'>Legend Title</h3>
+    <div class='bg-blue h180 w240 mx-auto'></div>
+  </div>
+
+
+  <script async defer src="https://api.mapbox.com/mapbox-assembly/v0.24.0/assembly.js"></script>
+  <script src="https://unpkg.com/leaflet@1.6.0/dist/leaflet.js"></script>
+  <script src='https://api.mapbox.com/mapbox.js/plugins/leaflet-omnivore/v0.3.1/leaflet-omnivore.min.js'></script>
+  <script src='js/app.js'></script>
+
+</body>
+
+</html>

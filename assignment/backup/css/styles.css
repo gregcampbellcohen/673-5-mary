@@ -1,0 +1,7 @@
+/* custom CSS rules */
+
+/* display none for layout but be careful of license restrictions */
+.mapbox-logo, .leaflet-control-attribution {
+  display: none; 
+
+}

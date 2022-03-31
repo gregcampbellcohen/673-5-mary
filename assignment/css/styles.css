@@ -1,0 +1,33 @@
+/* custom CSS rules */
+
+/* display none for layout but be careful of license restrictions */
+.mapbox-logo, .leaflet-control-attribution {
+    display: none; 
+  
+  }
+
+.legend-large, .legend-small {
+    border-radius: 50%;
+}
+
+hr.small, hr.large {
+    width: 83px;
+    position: absolute;
+    top: -8px;
+    left: 55px;
+    border: 1px dashed #ccc;     /* overwrite assembly.css rule */
+    margin-top: 8px;            /* overwrite assembly.css rule */
+}
+
+#info {
+    z-index: 1000;
+}
+
+.boys {
+    color: #6E77B0;
+}
+
+.girls {
+    color: #D96D02;
+}
+  

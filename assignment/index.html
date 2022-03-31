@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <title>Lab 05</title>
+    <meta
+      name="viewport"
+      content="initial-scale=1,maximum-scale=1,user-scalable=no"
+    />
+
+    <link
+      href="https://api.mapbox.com/mapbox-assembly/v0.24.0/assembly.min.css"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/leaflet@1.6.0/dist/leaflet.css"
+    />
+    <link href="css/styles.css" rel="stylesheet" />
+    <link href='https://fonts.googleapis.com/css?family=Work+Sans:400,500,600' rel='stylesheet' type='text/css'>
+  </head>
+
+  <body>
+    <div class="flex-parent viewport-full relative scroll-hidden">
+      <div class="flex-child w-full w300-ml absolute static-ml left bottom">
+        <div
+          class="flex-parent flex-parent--column viewport-third h-full-ml hmax-full bg-white py18 px12"
+        >
+          <div class="flex-child flex-child--grow px12 py12 scroll-auto">
+            <h1 class="txt-h2 mb6">Title here</h1>
+            <p>
+              Cum sociis natoque penatibus et magnis dis parturient montes,
+              nascetur ridiculus mus. Sed posuere consectetur est at lobortis.
+              Aenean eu leo quam. Pellentesque ornare sem lacinia quam venenatis
+              vestibulum. Aenean lacinia bibendum nulla sed consectetur. Lorem
+              ipsum dolor sit amet, consectetur adipiscing elit. Cum sociis
+              natoque penatibus et magnis dis parturient montes, nascetur
+              ridiculus mus.
+            </p>
+            <h2 class="txt-xl mt18 mb12">subheading</h2>
+            <p>
+              Cum sociis natoque penatibus et magnis dis parturient montes,
+              nascetur ridiculus mus. Sed posuere consectetur est at lobortis.
+              Aenean eu leo quam. Pellentesque ornare sem lacinia quam venenatis
+              vestibulum. Aenean lacinia bibendum nulla sed consectetur. Lorem
+              ipsum dolor sit amet, consectetur adipiscing elit. Cum sociis
+              natoque penatibus et magnis dis parturient montes, nascetur
+              ridiculus mus.
+            </p>
+          </div>
+          <footer class="px12 py12 bg-gray-faint txt-s">
+            <ul>
+              <li>Explore the raw
+                <a class='link' href='#'>data</a>
+              </li>
+              <li>
+                Map authored by
+                <a class="link" href="https://www.twitter.com/gcampbellcohen">Greg Campbell=Cohen</a>
+              </li>
+            </ul>
+          </footer>
+        </div>
+      </div>
+      <div
+        class="flex-child flex-child--grow viewport-twothirds viewport-full-ml"
+      >
+        <div id="map" class="viewport-twothirds viewport-full-ml"></div>
+      </div>
+    </div>
+
+    <!-- ui slider -->
+
+    <div id="slider" class="range w240 bg-white round-ml px12">
+      <input type="range" min="1" , max="8" , value="1" , step="1" />
+    </div>
+
+    <!-- legend -->
+    <div id="legend" class="bg-white round px12 py12 relative">
+      <h3 class="txt-bold mb12 w180">Number of <span style="color: #D96D02">girl</span> and <span style="color:#6E77B0">boy </span>students enrolled by county</h3>
+      <div class="legend-circles relative w180">
+        <div class="legend-large border border--gray-light absolute"></div>
+        <div class="legend-small border border--gray-light absolute"></div>
+        <div class="legend-large-label txt-m absolute"></div>
+        <div class="legend-small-label txt-m absolute"></div>
+      </div>
+    </div>
+
+    <!-- ui info panel -->
+    <div
+      id="info"
+      class="py6 px12 bg-white border border--gray-light round fixed w240"
+    >
+      <p>County: <span></span></p>
+      <p class="girls">
+        Girls <span></span>: <span class="txt-l txt-bold"></span>
+      </p>
+      <p class="boys">
+        Boys <span></span>: <span class="txt-l txt-bold"></span>
+      </p>
+      <!-- Additional elements added here for this step! -->
+      <hr class="txt-hr" />
+      <p class="my6">Trend: grades 1 &ndash; 8</p>
+      <p class="mb6"><span class="girlspark"></span></p>
+      <p><span class="boyspark"></span></p>
+    </div>
+
+    <script
+      async
+      defer
+      src="https://api.mapbox.com/mapbox-assembly/v0.24.0/assembly.js"
+    ></script>
+    <script src="https://unpkg.com/leaflet@1.6.0/dist/leaflet.js"></script>
+    <script src="https://api.mapbox.com/mapbox.js/plugins/leaflet-omnivore/v0.3.1/leaflet-omnivore.min.js"></script>
+    <script src="js/app.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-sparklines/2.1.2/jquery.sparkline.min.js"></script>
+  </body>
+</html>
